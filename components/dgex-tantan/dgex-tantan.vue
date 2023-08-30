@@ -212,6 +212,11 @@
 				if (this.btnClickType) {
 					return
 				}
+				
+				if(this.list.length == this.currentIndex + 1) {
+					alert('没有更多了~')
+					return
+				}
 				this.btnClickType = true
 				let w = 0
 				if (type === 'love') {
@@ -221,6 +226,7 @@
 					w = -this.winWidth * 1.5
 					this.dislike = 1
 				}
+				// console.log(this.list,this.currentIndex,'说说说')
 				this.$set(this.list[this.currentIndex], 'x', w)
 				this.touchEndDone()
 			},

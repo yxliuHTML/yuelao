@@ -22,7 +22,13 @@ export default {
       'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
       'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
       'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
-      'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500'
+      'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://img2.baidu.com/it/u=640593135,209279600&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500',
+	  'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fmobile%2F2020-06-19%2F5eec5f30c7a71.jpg&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662573014&t=e46c2e2622713d2a5c4d2a325ab1f08d'
     ]
     for (let index = 0; index < 10; index++) {
       const n = Math.floor(Math.random() * (tu.length - 1))
@@ -38,6 +44,8 @@ export default {
   },
   methods: {
     change(data) {
+		
+		console.log(data);
       // 判断倒数
       if (data.currentIndex > this.list.length - 5) {
         // 模拟一下最加数据
@@ -58,7 +66,6 @@ export default {
           this.list.push(newdata)
         }
       }
-      // console.log(data);
     },
     clickImage(data) {
       console.log(data);
