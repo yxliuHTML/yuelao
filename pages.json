@@ -55,7 +55,7 @@
     {
       "path": "pages/dynamic/dynamic",
       "style": {
-        "navigationBarTitleText": "发现"
+        "navigationBarTitleText": "推荐"
       }
     },
     {
